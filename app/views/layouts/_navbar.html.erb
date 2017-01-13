@@ -1,0 +1,30 @@
+<header>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar glyph"></span>
+                <span class="icon-bar glyph"></span>
+                <span class="icon-bar glyph"></span>
+            </a>
+            <div class="container">
+                <%= link_to "Your app", root_path, :class => "brand" %> 
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class=<%= current_page?(welcome_start_path) || current_page?(root_path) ? "active" : "" %> > <%= link_to (t "navbar.home"), root_path%></li>
+                        <li class=<%= current_page?(concerts_path) ? "active" : "" %>> <%= link_to (t "navbar.know"), concerts_path%></li>  
+                        <li class=<%= current_page?(welcome_take_part_path) ? "active" : "" %>> <%= link_to (t "navbar.buy"), welcome_take_part_path%></li>                       
+                        <li class=<%= current_page?(chronics_path) ? "active" : "" %>> <%= link_to "FAQ", welcome_chronic_path%></li>           
+                        <li class=<%= current_page?(welcome_sponsoring_path) ? "active" : "" %>> <%= link_to (t "navbar.contact"), welcome_sponsoring_path%></li>
+                        <li class=<%= current_page?(welcome_contact_path) ? "active" : "" %>> <%= link_to (t "navbar.contact"), welcome_contact_path%></li>
+
+                        <!-- <li class="active"><a href="index.html">Home</a></li> -->
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li><%= link_to "English", welcome_english_path%></li>
+                        <li><%= link_to "Deutsch", welcome_german_path%></li>
+                    </ul> 
+                </div><!-- /.nav-collapse -->
+            </div><!--/.container-->
+        </div><!-- /navbar-inner -->
+    </div>
+</header><!--/header-->
