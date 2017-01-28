@@ -1,30 +1,79 @@
-<header>
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar glyph"></span>
-                <span class="icon-bar glyph"></span>
-                <span class="icon-bar glyph"></span>
-            </a>
-            <div class="container">
-                <%= link_to "Your app", root_path, :class => "brand" %> 
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li class=<%= current_page?(welcome_start_path) || current_page?(root_path) ? "active" : "" %> > <%= link_to (t "navbar.home"), root_path%></li>
-                        <li class=<%= current_page?(concerts_path) ? "active" : "" %>> <%= link_to (t "navbar.know"), concerts_path%></li>  
-                        <li class=<%= current_page?(welcome_take_part_path) ? "active" : "" %>> <%= link_to (t "navbar.buy"), welcome_take_part_path%></li>                       
-                        <li class=<%= current_page?(chronics_path) ? "active" : "" %>> <%= link_to "FAQ", welcome_chronic_path%></li>           
-                        <li class=<%= current_page?(welcome_sponsoring_path) ? "active" : "" %>> <%= link_to (t "navbar.contact"), welcome_sponsoring_path%></li>
-                        <li class=<%= current_page?(welcome_contact_path) ? "active" : "" %>> <%= link_to (t "navbar.contact"), welcome_contact_path%></li>
 
-                        <!-- <li class="active"><a href="index.html">Home</a></li> -->
-                    </ul>
-                    <ul class="nav pull-right">
-                        <li><%= link_to "English", welcome_english_path%></li>
-                        <li><%= link_to "Deutsch", welcome_german_path%></li>
-                    </ul> 
-                </div><!-- /.nav-collapse -->
-            </div><!--/.container-->
-        </div><!-- /navbar-inner -->
-    </div>
-</header><!--/header-->
+
+<!--=== Header v6 ===-->
+		<header class="header-v6 header-classic-dark header-dark-dropdown header-sticky">
+			<!-- Navbar -->
+			<div class="navbar mega-menu" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="menu-container">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<!-- Navbar Brand -->
+						<div class="navbar-brand">
+							<%= link_to "Your app", root_path, :class => "brand" %> 
+						</div>
+						<!-- End Navbar Brand -->
+
+						<!-- Header Inner Right -->
+						<div class="header-inner-right">
+							<ul class="menu-icons-list">
+								<li class="menu-icons">
+									<i class="menu-icons-style search search-close search-btn fa fa-search"></i>
+									<div class="search-open">
+										<input type="text" class="animated fadeIn form-control" placeholder="Suchen ...">
+									</div>
+								</li>
+								<li class="menu-icons">
+									<i class="menu-icons-style fa fa-globe"></i>
+								</li>
+							</ul>
+						</div>
+						<!-- End Header Inner Right -->
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<div class="menu-container">
+							<ul class="nav navbar-nav">
+								<!-- Home -->
+								<li class="dropdown">
+									<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+										Home
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="index.html">Option 1: Default Page</a></li>
+
+										<!-- One Page -->
+										<li class="dropdown-submenu">
+											<a href="javascript:void(0);">Option 2: One Page</a>
+											<ul class="dropdown-menu">
+												<li><a target="_blank" href="One-Pages/Classic/index.html">- One Page Template</a></li>
+												<li><a target="_blank" href="One-Pages/Classic/one_page_dark.html">- One Page Dark Option</a></li>
+												<li><a target="_blank" href="One-Pages/Classic/one_page_home1.html">- One Page Option 1</a></li>
+												<li><a target="_blank" href="One-Pages/Classic/one_page_home2.html">- One Page Option 2</a></li>
+												<li><a target="_blank" href="One-Pages/Classic/one_page_home3.html">- One Page Option 3</a></li>
+											</ul>
+										</li>
+										<!-- End One Page -->		
+									</ul>
+								</li>
+								<li class=<%= current_page?(root_path) ? "active" : "" %> > <%= link_to (t "navbar.start"), root_path%></li>
+                        <li class=<%= current_page?(aboutus_path) ? "active" : "" %>> <%= link_to (t "navbar.aboutus"), aboutus_path%></li>  
+                        <li class=<%= current_page?(participate_path) ? "active" : "" %>> <%= link_to (t "navbar.participate"), participate_path%></li>                       
+                        <li class=<%= current_page?(sponsoring_path) ? "active" : "" %>> <%= link_to (t "navbar.sponsoring"), sponsoring_path%></li>           
+                        <li class=<%= current_page?(sponsoring_path) ? "active" : "" %>> <%= link_to (t "navbar.sponsoring"), sponsoring_path%></li>
+                        <li class=<%= current_page?(contact_path) ? "active" : "" %>> <%= link_to (t "navbar.contact"), contact_path%></li>	
+							</ul>
+						</div>
+					</div><!--/navbar-collapse-->
+				</div>
+			</div>
+			<!-- End Navbar -->
+		</>
+		<!--=== End Header v6 ===-->

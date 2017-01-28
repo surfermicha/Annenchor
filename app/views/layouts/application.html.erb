@@ -16,14 +16,14 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <!-- CSS Theme -->
-    <link rel="stylesheet" href="assets/css/theme-colors/default.css">
+	<!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/f1e6ff008c.js"></script>
 
   </head>
 
   <body>
   	<div class="wrapper">
-  		<
+  		<%= render :partial => 'layouts/navbar' %>
     	<%= yield %>
     	<%= render :partial => 'layouts/footer' %>
 
