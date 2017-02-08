@@ -13,4 +13,24 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require plugins/jquery-migrate.min
+//= require plugins/bootstrap.min
+//= require plugins/back-to-top
+//= require plugins/smoothScroll
+//= require custom
+//= require app
+//= require init
+//= require plugins/respond
+//= require plugins/html5shiv
+//= require plugins/placeholder-IE-fixes
+
+//The last three files are for fixing IE problems the have to be included with a if statement liek this
+/*
+ * <!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>
+    <script src="assets/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+ */
+
+

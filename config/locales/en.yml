@@ -26,3 +26,9 @@ en:
     participate: "Participate"
     aboutus: "About Us"
     sponsoring: "Sponsoring"
+    search: "Suchen..."
+  footer:
+    contactus: "Contact Us"
+    impressum: "Legal Notice"
+    privacypolicy: "Privacy Policy"
+    copyright: "All Rights Reserved"

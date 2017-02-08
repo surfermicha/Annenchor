@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   # Ressources einfügen:
   # History?
   # Aktuelles / Chorleben
+  
+  get '/setGerman', to: 'welcome#german'
+  get '/setEnglish', to: 'welcome#english'
 end

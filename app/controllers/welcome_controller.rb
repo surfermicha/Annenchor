@@ -21,10 +21,12 @@ class WelcomeController < ApplicationController
   
   #Language setting
   def english
-    
+    I18n.locale = :en
+    redirect_back fallback_location:  root_url
   end
   
   def german
-    
+    I18n.locale = :de
+    redirect_back fallback_location:  root_url
   end
 end

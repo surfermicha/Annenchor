@@ -48,7 +48,7 @@
 
 						<!-- Address -->
 						<div class="col-md-3 map-img md-margin-bottom-40">
-							<div class="headline"><h2>Contact Us</h2></div>
+							<div class="headline"><h2><%= (t "footer.contactus") %></h2></div>
 							<address class="md-margin-bottom-40">
 								25, Lorem Lis Street, Orange <br />
 								California, US <br />
@@ -67,8 +67,8 @@
 					<div class="row">
 						<div class="col-md-6">
 							<p>
-								2015 &copy; All Rights Reserved.
-								<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+								<%= Time.now.year %> &copy; <%= (t "footer.copyright") %>
+								<a href="#"><%= (t "footer.privacypolicy") %></a> | <a href="#"><%= (t "footer.impressum") %></a>
 							</p>
 						</div>
 
