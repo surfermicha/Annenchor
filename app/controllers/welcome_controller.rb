@@ -19,6 +19,15 @@ class WelcomeController < ApplicationController
     
   end
   
+  #legal pages
+  def privacyPolicy
+    
+  end
+  
+  def impressum
+    
+  end
+  
   #Language setting
   def english
     I18n.locale = :en

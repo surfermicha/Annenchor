@@ -68,7 +68,7 @@
 						<div class="col-md-6">
 							<p>
 								<%= Time.now.year %> &copy; <%= (t "footer.copyright") %>
-								<a href="#"><%= (t "footer.privacypolicy") %></a> | <a href="#"><%= (t "footer.impressum") %></a>
+								<%= link_to (t "footer.privacypolicy"), privacyPolicy_path %> | <%= link_to (t "footer.impressum"), impressum_path %>
 							</p>
 						</div>
 
