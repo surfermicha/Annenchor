@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-  <head>
-    <title>Annenchor</title>
-    <%= csrf_meta_tags %>
+<!--[if !IE]><!-->
+<html lang="en">
+	<!--<![endif]-->
+	<head>
+		<title>Annenchor</title>
+		<%= csrf_meta_tags %>
 
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Web Fonts -->
-    <link rel="shortcut" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin">
+		<!-- Web Fonts -->
+		<link rel="shortcut" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin">
 
-    <!-- CSS Global Compulsory -->
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<!-- CSS Global Compulsory -->
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-	<!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/f1e6ff008c.js"></script>
+		<!-- Font Awesome -->
+		<script src="https://use.fontawesome.com/f1e6ff008c.js"></script>
 
-  </head>
+	</head>
 
-  <body>
-  	<div class="wrapper">
-  		<%= render :partial => 'layouts/navbar' %>
-    	<%= yield %>
-    	<%= render :partial => 'layouts/footer' %>
+	<body>
+		<div class="wrapper">
+			<%= render :partial => 'layouts/navbar' %>
+			<!--=== Content Part  ===-->
+			<div class="container content">
+				<%= yield %>
+			</div><!--/container-->
+			<!--=== End Content Part  ===-->
 
-    </div>
-  </body>
+			<%= render :partial => 'layouts/footer' %>
+
+		</div>
+	</body>
 </html>
