@@ -74,14 +74,22 @@
 						<li class=<%= current_page?(root_path) ? "active" : "" %> >
 							<%= link_to (t "navbar.start"), root_path%>
 						</li>
-						<li class=<%= current_page?(aboutus_path) ? "active" : "" %>>
-							<%= link_to (t "navbar.aboutus"), aboutus_path%>
+						<li class=<%= current_page?(concerts_path) ? "active" : "" %>>
+							<%= link_to (t "navbar.concerts"), concerts_path%>
+						</li>
+						<li class=<%= current_page?(aboutus_path) ? "active dropdown" : "dropdown" %>>
+							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"> <%= (t "navbar.aboutus") %> </a>
+							<ul class="dropdown-menu">
+								<li>
+									<%= link_to (t "navbar.aboutus"), aboutus_path%>
+								</li>
+								<li>
+									<%= link_to (t "navbar.tidings") %>
+								</li>
+							</ul>
 						</li>
 						<li class=<%= current_page?(participate_path) ? "active" : "" %>>
 							<%= link_to (t "navbar.participate"), participate_path%>
-						</li>
-						<li class=<%= current_page?(sponsoring_path) ? "active" : "" %>>
-							<%= link_to (t "navbar.sponsoring"), sponsoring_path%>
 						</li>
 						<li class=<%= current_page?(sponsoring_path) ? "active" : "" %>>
 							<%= link_to (t "navbar.sponsoring"), sponsoring_path%>
