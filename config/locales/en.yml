@@ -30,7 +30,16 @@ en:
     concerts: "Events"
     tidings: "Recent Activities"
   footer:
-    contactus: "Contact Us"
+    contactus: 
+      heading: "Contact Us"
+      email: "Email"
+      fax: "Fax"
+      phone: "Phone"
     impressum: "Legal Notice"
     privacypolicy: "Privacy Policy"
     copyright: "All Rights Reserved"
+    navigation: "Navigation"
+    lastTidings: "Recent Activities"
+  impressum:
+    lead: "Legal Notice"
+    

@@ -9,7 +9,23 @@ de:
     concerts: "Auftritte"
     tidings: "Aus dem Chorleben"
   footer:
-    contactus: "Kontakt"
+    contactus: 
+      heading: "Kontakt"
+      email: "E-Mail"
+      fax: "Fax"
+      phone: "Telefon"
     impressum: "Impressum"
     privacypolicy: "Datenschutz"
     copyright: "Alle Rechte vorbehalten"
+    navigation: "Navigation"
+    lastTidings: "Letzte Ereignisse"
+  impressum:
+    lead: "Legal Notice"
+    heading:
+      main: "Impressum"
+      legalInfo: "Rechtliche Angaben"
+      termsOfUse: "Nutzungsbedingungen"
+      disclaimer: "Haftungsausschluss"
+    text:
+      termsOfUse: "bla"
+      disclaimer: "blub"

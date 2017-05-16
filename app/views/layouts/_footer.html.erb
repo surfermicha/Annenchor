@@ -5,7 +5,7 @@
 					<div class="row">
 						<!-- About -->
 						<div class="col-md-3 md-margin-bottom-40">
-							<a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
+							<!-- <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a> -->
 							<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
 							<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
 						</div>
@@ -14,7 +14,7 @@
 						<!-- Latest -->
 						<div class="col-md-3 md-margin-bottom-40">
 							<div class="posts">
-								<div class="headline"><h2>Latest Posts</h2></div>
+								<div class="headline"><h2><%= (t "footer.lastTidings") %></h2></div>
 								<ul class="list-unstyled latest-list">
 									<li>
 										<a href="#">Incredible content</a>
@@ -35,26 +35,28 @@
 
 						<!-- Link List -->
 						<div class="col-md-3 md-margin-bottom-40">
-							<div class="headline"><h2>Useful Links</h2></div>
+							<div class="headline"><h2><%= (t "footer.navigation") %></h2></div>
 							<ul class="list-unstyled link-list">
-								<li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-								<li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-								<li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-								<li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-								<li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+								<li><%= link_to (t "navbar.start"), root_path%><i class="fa fa-angle-right"></i></li>
+								<li><%= link_to (t "navbar.concerts"), concerts_path%><i class="fa fa-angle-right"></i></li>
+								<li><%= link_to (t "navbar.aboutus"), aboutus_path%><i class="fa fa-angle-right"></i></li>
+								<li><%= link_to (t "navbar.tidings") %><i class="fa fa-angle-right"></i></li>
+								<li><%= link_to (t "navbar.participate"), participate_path%><i class="fa fa-angle-right"></i></li>
+								<li><%= link_to (t "navbar.sponsoring"), sponsoring_path%><i class="fa fa-angle-right"></i></li>
+								<li><%= link_to (t "navbar.contact"), contact_path%><i class="fa fa-angle-right"></i></li>
 							</ul>
 						</div>
 						<!-- End Link List -->
 
 						<!-- Address -->
 						<div class="col-md-3 map-img md-margin-bottom-40">
-							<div class="headline"><h2><%= (t "footer.contactus") %></h2></div>
+							<div class="headline"><h2><%= (t "footer.contactus.heading") %></h2></div>
 							<address class="md-margin-bottom-40">
-								25, Lorem Lis Street, Orange <br />
-								California, US <br />
-								Phone: 800 123 3456 <br />
-								Fax: 800 123 3456 <br />
-								Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+								Dingbängerweg 61 <br />
+								48163 Münster <br />
+								<%= (t "footer.contactus.phone")%>: <a href="tel:+49251717077" class="">+49 251 71 70 77</a><br />
+								<%= (t "footer.contactus.fax")%>: <a href="" class="">+49 251 XXX</a><br />
+								<%= (t "footer.contactus.email")%>: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
 							</address>
 						</div>
 						<!-- End Address -->
@@ -103,11 +105,6 @@
 								<li>
 									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
 										<i class="fa fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
-										<i class="fa fa-dribbble"></i>
 									</a>
 								</li>
 							</ul>
