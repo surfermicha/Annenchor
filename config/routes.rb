@@ -10,7 +10,9 @@ Rails.application.routes.draw do
   # History?
   # Aktuelles / Chorleben
   # concerts
-  resources :concerts
+  resources :concerts do
+    resources :performers
+  end
   
   get '/setGerman', to: 'welcome#german'
   get '/setEnglish', to: 'welcome#english'
