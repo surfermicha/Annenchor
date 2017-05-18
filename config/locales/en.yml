@@ -42,4 +42,20 @@ en:
     lastTidings: "Recent Activities"
   impressum:
     lead: "Legal Notice"
+    heading:
+      main: "Legal Notice"
+      legalInfo: "Legal Info"
+      termsOfUse: "Terms Of Service"
+      disclaimer: "Disclaimer"
+    text:
+      termsOfUse: "bla"
+      disclaimer: "blub"
+  concerts:
+    show:
+      heading:
+        performers: "Performers"
+      published: "Published"
+      draft: "Draft"
+      noPerformers: "No performers have been added."
+      addPerformer: "Add performer"
     

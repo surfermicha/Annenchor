@@ -1,30 +1,38 @@
-<h1>Konzerte</h1>
+<div class="container content">
 
-<% @concerts.each do |concert| %>
+	<h1>Konzerte</h1>
 
-<div class="row tag-box tag-box-v3">
-	<div class="col-sm-12">
-		<div class="row">
-			<div class="col-md-10 col-sm-12">
-				<h2><%= concert.title %></h2>
-				<h3><%= concert.subTitle %></h3>
-			</div>
-			<div class="col-md-2 col-sm-12">
-				<%= concert.eventDate %><br/>
-				<%= concert.eventTime %><br/>
-				<%= concert.eventDateTitle %>
+	<% @concerts.each do |concert| %>
+
+	<div class="row tag-box tag-box-v3">
+		<div class="col-sm-12">
+			<div class="row">
+				<div class="col-md-10 col-sm-12">
+					<h2><%= concert.title %></h2>
+					<h3><%= concert.subTitle %></h3>
+				</div>
+				<div class="col-md-2 col-sm-12">
+					<%= concert.eventDate %>
+					<br/>
+					<%= concert.eventTime %>
+					<br/>
+					<%= concert.eventDateTitle %>
+				</div>
 			</div>
 		</div>
+		<div class="col-md-6 col-sm-12">
+			<%= concert.text %>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			Keine Mitwirkenden genannt
+			<% concert.performers.each do |performer| %>
+			blub
+			<% end %>
+		</div>
+		<div class="col-sm-12">
+			<%= concert.location %>, <%= concert.category %>, <%= concert.published %>
+		</div>
 	</div>
-	<div class="col-md-6 col-sm-12">
-		<%= concert.text %>
-	</div>
-	<div class="col-md-6 col-sm-12">
-		Keine Mitwirkenden genannt
-	</div>
-	<div class="col-sm-12">
-		<%= concert.location %>, <%= concert.category %>, <%= concert.published %>
-	</div>
+	<%= link_to 'Show', concert_path(concert) %>
+	<% end %>
 </div>
-<%= link_to 'Show', concert_path(concert) %>
-<% end %>

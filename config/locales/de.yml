@@ -29,3 +29,12 @@ de:
     text:
       termsOfUse: "bla"
       disclaimer: "blub"
+  concerts:
+    show:
+      heading:
+        performers: "Mitwirkende"
+      published: "Veröffentlicht"
+      draft: "Entwurf"
+      noPerformers: "Es sind keine Mitwirkenden angegeben."
+      addPerformer: "Mitwirkenden hinzufügen"
+      

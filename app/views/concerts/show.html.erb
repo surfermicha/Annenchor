@@ -1,17 +1,62 @@
-<p>
-  <strong>Title:</strong>
-  <%= @concert.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @concert.text %>
-</p>
+<div class="container content">
+	<div class="row tag-box tag-box-v3">
+		<div class="col-sm-12">
+			<div class="row">
+				<div class="col-md-10 col-sm-12">
+					<h2><%= @concert.title %> <small><%= @concert.subTitle %></small></h2>
 
-      <p><strong>Subtitel:</strong><%= @concert.subTitle %></p>
-      <p><strong>Location</strong><%= @concert.location %></p>
-      <p><strong>Category</strong><%= @concert.category %></p>
-      <p><strong>Published?</strong><%= @concert.published %></p>
-      <p><strong>Datum</strong><%= @concert.eventDate %></p>
-      <p><strong>Zeit</strong><%= @concert.eventTime %></p>
-      <p><strong>Zusatztitel für das EventDatum (z.B. "3.Advent")</strong><%= @concert.eventDateTitle %></p>
+				</div>
+				<div class="col-md-2 col-sm-12">
+					<%= @concert.eventDate.strftime("%-d. %B %Y") %>
+					<br/>
+					<%= @concert.eventTime.strftime("%R") %> Uhr
+					<br/>
+					<%= @concert.eventDateTitle %>
+				</div>
+			</div>
+			<hr class="no-margin margin-bottom-10 margin-top-10"/>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<%= @concert.text %>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<h4><%= t("concerts.show.heading.performers")%></h4>
+			<% @concert.performers.each do |performer| %>
+			<div class="testimonials testimonials-v1">
+				<div class="testimonial-info">
+					<%= image_tag("user.jpg", class: "rounded-x")%>
+					<span class="testimonial-author"><%= performer.name %> <em><%= performer.role %></em></span>
+				</div>
+			</div>
+			<hr class="margin-bottom-10">
+			<% end %>
+			<% if @concert.performers.count <= 0 %>
+			<p>
+				<%= t("concerts.show.noPerformers")%>
+			</p>
+			<% end %>
+
+			<%= link_to t("concerts.show.addPerformer")%>
+		</div>
+		<div class="col-sm-12">
+			<hr/>
+			<ul class="list-inline">
+				<li>
+					<i class="fa fa-map-marker color-green"></i> <%= @concert.location %>
+				</li>
+				<li>
+					<i class="fa fa-tags color-green"></i> <%= @concert.category %>
+				</li>
+				<li>
+					<i class="fa fa-bullhorn color-green"></i>
+					<em> <% if @concert.published? %>
+					<%= t("concerts.show.published")%>
+					<% else %>
+					<%= t("concerts.show.draft")%>
+					<% end %></em>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div><!--/container-->

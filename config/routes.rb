@@ -11,11 +11,11 @@ Rails.application.routes.draw do
   # Aktuelles / Chorleben
   # concerts
   resources :concerts do
-    resources :performers
+    resources :performers, shallow: true
   end
   
-  get '/setGerman', to: 'welcome#german'
-  get '/setEnglish', to: 'welcome#english'
+  post '/setGerman', to: 'welcome#german'
+  post '/setEnglish', to: 'welcome#english'
   get '/impressum', to: 'welcome#impressum'
   get '/privacyPolicy', to: 'welcome#privacyPolicy'
 end
