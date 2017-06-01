@@ -17,8 +17,15 @@
 //= require plugins/bootstrap.min
 //= require plugins/back-to-top
 //= require plugins/smoothScroll
+//= require plugins/masterslider/masterslider
+//= require plugins/masterslider/jquery.easing.min
+//= require plugins/fancybox/jquery.fancybox
 //= require custom
 //= require app
+
+//= require plugins/fancybox/fancy-box
+//= require plugins/masterslider/master-slider-fw
+
 //= require init
 //= require plugins/respond
 //= require plugins/html5shiv
