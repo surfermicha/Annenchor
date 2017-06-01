@@ -15,6 +15,8 @@
  *= require header-v6
  *= require footer-v1
  *= require plugins/animate 
- * 
+ *= require plugins/fancybox/jquery.fancybox
+ *= require plugins/masterslider/masterslider 
+ *= require plugins/masterslider/style
  *= require custom
  */
