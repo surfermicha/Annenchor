@@ -8,6 +8,9 @@ de:
     search: "Suchen..."
     concerts: "Auftritte"
     tidings: "Aus dem Chorleben"
+    languages:
+      german: "Deutsch"
+      english: "Englisch"
   footer:
     contactus: 
       heading: "Kontakt"
@@ -19,6 +22,9 @@ de:
     copyright: "Alle Rechte vorbehalten"
     navigation: "Navigation"
     lastTidings: "Letzte Ereignisse"
+  start:
+    testimonials:
+      heading: "WAS WIR SAGEN"
   impressum:
     lead: "Legal Notice"
     heading:
@@ -37,4 +43,17 @@ de:
       draft: "Entwurf"
       noPerformers: "Es sind keine Mitwirkenden angegeben."
       addPerformer: "Mitwirkenden hinzufügen"
-      
+  contact:
+    form:
+      buttons:
+        send: "Senden"
+      labels:
+        message: "Nachricht"
+        name: "Name"
+        email: "E-Mail"
+      alerts:
+        success: "Die Nachricht wurde erfolgreich versendet!"
+    headings: 
+      main: "Kontakt"
+      contactdata: "Kontaktdaten"
+    text: "Ganz wichtiger Einleitungstext"

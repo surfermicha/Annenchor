@@ -29,6 +29,9 @@ en:
     search: "Search..."
     concerts: "Events"
     tidings: "Recent Activities"
+    languages:
+      german: "German"
+      english: "English"
   footer:
     contactus: 
       heading: "Contact Us"
@@ -40,6 +43,9 @@ en:
     copyright: "All Rights Reserved"
     navigation: "Navigation"
     lastTidings: "Recent Activities"
+  start:
+    testimonials:
+      heading: "WHAT PEOPLE SAY"
   impressum:
     lead: "Legal Notice"
     heading:
@@ -58,4 +64,18 @@ en:
       draft: "Draft"
       noPerformers: "No performers have been added."
       addPerformer: "Add performer"
+  contact:
+    form:
+      buttons:
+        send: "Send"
+      labels:
+        message: "Message"
+        name: "Name"
+        email: "Email"
+      alerts:
+        success: "Your message was successfully sent!"
+    headings:
+      main: "Contact"
+      contactdata: "Contacts"
+    text: "Important text"
     

@@ -149,15 +149,60 @@
 		</div>
 		<!--=== End Call To Action ===-->
 		
+		<div class="container content-sm">
+				<div class="headline-center margin-bottom-60">
+					<h2>NEUIGKEITEN</h2>
+					<p>Dass wir nicht nur das Singen gemeinsam haben zeigen die zahlreichen Aktitäten, die wir zusammen unternehmen und unser Engargement in unserem Umfeld. Wir sind einfach ständig in Bewegung. Noch mehr von uns findest du bei den <%= link_to "Neuigkeiten - LINK FEHLT" %></p>
+				</div><!--/end Headline Center-->
+
+				<!-- Portfolio Box -->
+				<ul class="list-unstyled row portfolio-box">
+					<li class="col-sm-4 md-margin-bottom-50">
+						<a class="thumbnail fancybox" data-rel="gallery" title="Unsere Aktivität" href="<%= image_url("pictures/7.jpg")%>" >
+							<%= image_tag("pictures/7.jpg", :class => "full-width img-responsive")%>
+							<span class="portfolio-box-in rounded-x">
+								<i class="icon-magnifier-add"></i>
+							</span>
+						</a>
+						<div class="headline-left margin-bottom-10"><h3 class="headline-brd">Unsere Aktivität</h3></div>
+						<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Aktivitäten</a>, <a href="#">Neuigkeiten</a></small>
+						<p>Wir haben was ganz tolles unternommen und davon berichten wir hier. </p>
+					</li>
+					<li class="col-sm-4 md-margin-bottom-50">
+						<a class="thumbnail fancybox" data-rel="gallery" title="Neue Verstärkung" href="<%= image_url("pictures/2.jpg")%>" >
+							<%= image_tag("pictures/2.jpg", :class => "full-width img-responsive")%>
+							<span class="portfolio-box-in rounded-x">
+								<i class="icon-magnifier-add"></i>
+							</span>
+						</a>
+						<div class="headline-left margin-bottom-10"><h3 class="headline-brd">Neue Verstärkung</h3></div>
+						<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Neuigkeiten</a>,</small>
+						<p> Wir freuen uns Max Mustermann als neuen Sänger in unserem Chor zu begrüßen. Er wird ab sofort den Tenor unterstützen.</p>
+					</li>
+					<li class="col-sm-4">
+						<a class="thumbnail fancybox" data-rel="gallery" title="Neue Chorfarbe gewählt" href="<%= image_url("pictures/3.jpg")%>" >
+							<%= image_tag("pictures/3.jpg", :class => "full-width img-responsive")%>
+							<span class="portfolio-box-in rounded-x">
+								<i class="icon-magnifier-add"></i>
+							</span>
+						</a>
+						<div class="headline-left margin-bottom-10"><h3 class="headline-brd">Neue Chorfarbe gewählt</h3></div>
+						<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Neuigkeiten</a>, <a href="#">Presse</a></small>
+						<p>Bei der letzten Mitgliederversammlung am Montag wurde nach vielen Diskussionen eine neue Chorfarbe gewählt. In Zukunft werden wir in einem schlichten pink auftreten, dass durch rote Akzente untermalt wird.</p>
+					</li>
+				</ul>
+				<!-- End Portfolio Box -->
+			</div><!--/end container-->
+		
 		
 
 <!-- Testimonials v4 -->
 		<div class="bg-color-light">
 			<div class="container content-md">
 				<div class="headline-center margin-bottom-60">
-					<h2>WHAT PEOPLE SAY</h2>
-					<p>Phasellus vitae ipsum ex. Etiam eu vestibulum ante. <br>
-						Lorem ipsum <strong>dolor</strong> sit amet, consectetur adipiscing elit. Morbi libero libero, imperdiet fringilla </p>
+					<h2><%= (t "start.testimonials.heading")%></h2>
+					<p>Wir sind Chor, in dem <strong>Gemeinschaft</strong> großgeschrieben wird. Trotzdem bestehen wir aus vielen <strong>Individualisten</strong>.<br>
+						Jeden treibt etwas anderes an und jeder hat seine eigenen Gründe, warum er in unserem Chor ist. Das sind nur zwei von vielen individuellen Gründen: </p>
 				</div>
 
 				<div class="row">
@@ -181,8 +226,8 @@
 							</div>
 							<%= image_tag("user.jpg", class: "rounded-x")%>
 							<span class="testimonials-author">
-								John Davenport<br>
-								<em>UX/UI Designer, <a href="#">Apple Inc.</a></em>
+								Markus Erlinghagen<br>
+								<em>Sänger im Bass</em>
 							</span>
 						</div>
 					</div>

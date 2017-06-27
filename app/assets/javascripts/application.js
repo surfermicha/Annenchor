@@ -25,6 +25,7 @@
 
 //= require plugins/fancybox/fancy-box
 //= require plugins/masterslider/master-slider-fw
+//= require plugins/google-map
 
 //= require init
 //= require plugins/respond
