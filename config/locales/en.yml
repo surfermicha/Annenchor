@@ -77,5 +77,10 @@ en:
     headings:
       main: "Contact"
       contactdata: "Contacts"
+      businesshours: "Business Hours"
+      practice: "Practice"
     text: "Important text"
+    practice:
+      thursday: "Thursday"
+      thursdayhours: "8 PM to 10 PM"
     

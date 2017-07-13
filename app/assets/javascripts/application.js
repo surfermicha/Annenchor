@@ -26,6 +26,12 @@
 //= require plugins/fancybox/fancy-box
 //= require plugins/masterslider/master-slider-fw
 //= require plugins/google-map
+//= require plugins/sky-forms-pro/jquery.form.min
+//= require plugins/sky-forms-pro/jquery.validate.min
+//= require plugins/sky-forms-pro/jquery.placeholder.min
+//= require plugins/sky-forms-pro/jquery.maskedinput.min
+//= require plugins/sky-forms-pro/jquery.modal
+
 
 //= require init
 //= require plugins/respond

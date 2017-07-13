@@ -1,237 +1,280 @@
 <!--=== Slider ===-->
-		<div class="ms-layers-template">
-			<!-- masterslider -->
-			<div class="master-slider ms-skin-black-2 round-skin" id="masterslider">
-				<div class="ms-slide" style="z-index: 10">
-					
-					<%= image_tag("masterslider/blank.gif", :data => { :src => image_url("pictures/2.jpg")})%>
-					<div class="ms-layer ms-promo-info color-light" style="left:15px; top:160px"
-					data-effect="bottom(40)"
-					data-duration="2000"
-					data-delay="700"
-					data-ease="easeOutExpo"
-					>Willkommen beim</div>
+<div class="ms-layers-template">
+	<!-- masterslider -->
+	<div class="master-slider ms-skin-black-2 round-skin" id="masterslider">
+		<div class="ms-slide" style="z-index: 10">
 
-					<div class="ms-layer ms-promo-info ms-promo-info-in color-light" style="left:15px; top:210px"
-					data-effect="bottom(40)"
-					data-duration="2000"
-					data-delay="1000"
-					data-ease="easeOutExpo"
-					><span class="color-green">Annen</span> Chor</div>
-
-					<div class="ms-layer ms-promo-sub color-light" style="left:15px; top:310px"
-					data-effect="bottom(40)"
-					data-duration="2000"
-					data-delay="1300"
-					data-ease="easeOutExpo"
-					>Wir sind ein engagierter Chor <br> mit großer Freude an Singen und Gemeinschaft.</div>
-
-
-					<a class="ms-layer btn-u" style="left:15px; top:390px" href="#"
-					data-effect="bottom(40)"
-					data-duration="2000"
-					data-delay="1300"
-					data-ease="easeOutExpo"
-					>Zu den Konzerten</a>
-
-					<a class="ms-layer btn-u btn-u-dark" style="left:170px; top:390px" href="#"
-					data-effect="bottom(40)"
-					data-duration="2000"
-					data-delay="1300"
-					data-ease="easeOutExpo"
-					>Über uns</a>
-				</div>
-
-				<div class="ms-slide" style="z-index: 13">
-					<%= image_tag("masterslider/blank.gif", :data => { :src => image_url("pictures/Chor2.png")})%>
-
-					<%= image_tag("masterslider/blank.gif", :class => "ms-layer", :style => "bottom:-10px; left:15px; width:400px; height: auto;" , :data => { :src => image_url("pictures/7.jpg"), :effect => "bottom(100)", :duration => "2000", :ease => "easeOutExpo", :type => "image"})%>
-
-					<h3 class="ms-layer ms-promo-info-in color-light"  style="left:450px; top:170px;"
-					data-effect="right(40)"
-					data-duration="2300"
-					data-delay="1300"
-					data-ease="easeOutExpo"
-					>MOST</h3>
-
-					<h3 class="ms-layer ms-promo-info-in color-darker"  style="left:450px; top:230px"
-					data-effect="left(40)"
-					data-duration="2300"
-					data-delay="1400"
-					data-ease="easeOutBack"
-					>INCREDIBLE</h3>
-
-					<h3 class="ms-layer ms-promo-info-in color-darker"  style="left:450px; top:290px"
-					data-effect="left(40)"
-					data-duration="2300"
-					data-delay="1400"
-					data-ease="easeOutBack"
-					>NEW <span class="color-light">FEATURES</span></h3>
-
-					<a class="ms-layer btn-u" style="left:450px; top:370px" href="#"
-					data-effect="bottom(40)"
-					data-duration="2000"
-					data-delay="1300"
-					data-ease="easeOutExpo"
-					>LEARN MORE</a>
-
-					<a class="ms-layer btn-u btn-u-dark" style="left:580px; top:370px" href="#"
-					data-effect="bottom(40)"
-					data-duration="2000"
-					data-delay="1300"
-					data-ease="easeOutExpo"
-					>DOWNLOAD NOW</a>
-				</div>
-
-
-
-				<div class="ms-slide" style="z-index: 12">
-					<%= image_tag("masterslider/blank.gif", :data => { :src => image_url("pictures/Kollage3.png")})%>
-
-					<div class="ms-layer video-box" style="bottom:125px; right:15px; width:650px; height:370px;"
-					data-type="video"
-					data-effect="rotate3dright(0,30,0,100,r)"
-					data-duration="1500"
-					data-ease="easeOutQuad"
-					>
-					
-					<%= image_tag("masterslider/blank.gif", :class => "ms-img-bordered", :data => { :src => image_url("pictures/7.jpg")})%>
-					<iframe src="http://player.vimeo.com/video/122353641" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-					</div>
-
-					<h3 class="ms-layer ms-promo-info color-light"  style="left:10px; top:170px"
-					data-effect="bottom(20)"
-					data-duration="2300"
-					data-delay="2300"
-					data-ease="easeOutExpo"
-					>AMAZING</h3>
-
-					<h3 class="ms-layer ms-promo-info-in color-light"  style="left:10px; top:245px"
-					data-effect="left(100)"
-					data-duration="3300"
-					data-delay="1900"
-					data-ease="easeOutExpo"
-					><span class="color-green">FEATURES</span></h3>
-
-					<h3 class="ms-layer normal-title color-light"  style="left:10px; top:312px"
-					data-effect="bottom(20)"
-					data-duration="2300"
-					data-delay="2000"
-					data-ease="easeOutExpo"
-					>UNIFY BOOTSTRAP TEMPLATE</h3>
-
-					<p class="ms-layer ms-promo-sub ms-promo-sub-in color-light"  style="left:10px; top:360px"
-					data-effect="right(40)"
-					data-duration="2300"
-					data-delay="2300"
-					data-ease="easeOutExpo"
-					>YOUTUBE, VIMEO AND CUSTOM <br> IFRAME SUPPORTED</p>
-				</div>
+			<%= image_tag("masterslider/blank.gif", :data => { :src => image_url("pictures/2.jpg")})%>
+			<div class="ms-layer ms-promo-info color-light" style="left:15px; top:160px"
+			data-effect="bottom(40)"
+			data-duration="2000"
+			data-delay="700"
+			data-ease="easeOutExpo"
+			>
+				Willkommen beim
 			</div>
-			<!-- end of masterslider -->
-		</div>
-		<!--=== End Slider ===-->
 
-		<!--=== Call To Action ===-->
-		<div class="call-action-v1 bg-color-light">
-			<div class="container">
-				<div class="call-action-v1-box">
-					<div class="call-action-v1-in">
-						<h3><strong>Jetzt einsteigen und Probesingen vereinbaren</strong></h3>
-						<p>Du wolltest schon immer mal singen, weißt aber noch nicht wie und wo? Du bist auf der Sucher nach einem neuen Hobby? 
-							Wir sind stetig auf der Suche nach netten Sängern, die uns als Mitglied oder auch zeitweise im Rahmen eines Projektchors begleiten.</p>
-					</div>
-					<div class="call-action-v1-in inner-btn page-scroll">
-						<a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block">PROBESINGEN VEREINBAREN</a>
-					</div>
-				</div>
+			<div class="ms-layer ms-promo-info ms-promo-info-in color-light" style="left:15px; top:210px"
+			data-effect="bottom(40)"
+			data-duration="2000"
+			data-delay="1000"
+			data-ease="easeOutExpo"
+			>
+				<span class="color-green">Annen</span> Chor
+			</div>
+
+			<div class="ms-layer ms-promo-sub color-light" style="left:15px; top:310px"
+			data-effect="bottom(40)"
+			data-duration="2000"
+			data-delay="1300"
+			data-ease="easeOutExpo"
+			>
+				Wir sind ein engagierter Chor
+				<br>
+				mit großer Freude an Singen und Gemeinschaft.
+			</div>
+
+			<a class="ms-layer btn-u" style="left:15px; top:390px" href="#"
+			data-effect="bottom(40)"
+			data-duration="2000"
+			data-delay="1300"
+			data-ease="easeOutExpo"
+			>Zu den Konzerten</a>
+
+			<a class="ms-layer btn-u btn-u-dark" style="left:170px; top:390px" href="#"
+			data-effect="bottom(40)"
+			data-duration="2000"
+			data-delay="1300"
+			data-ease="easeOutExpo"
+			>Über uns</a>
+		</div>
+
+		<div class="ms-slide" style="z-index: 13">
+			<%= image_tag("masterslider/blank.gif", :data => { :src => image_url("pictures/Chor2.png")})%>
+
+			<%= image_tag("masterslider/blank.gif", :class => "ms-layer", :style => "bottom:-10px; left:15px; width:400px; height: auto;" , :data => { :src => image_url("pictures/7.jpg"), :effect => "bottom(100)", :duration => "2000", :ease => "easeOutExpo", :type => "image"})%>
+
+			<h3 class="ms-layer ms-promo-info-in color-light"  style="left:450px; top:170px;"
+			data-effect="right(40)"
+			data-duration="2300"
+			data-delay="1300"
+			data-ease="easeOutExpo"
+			>MOST</h3>
+
+			<h3 class="ms-layer ms-promo-info-in color-darker"  style="left:450px; top:230px"
+			data-effect="left(40)"
+			data-duration="2300"
+			data-delay="1400"
+			data-ease="easeOutBack"
+			>INCREDIBLE</h3>
+
+			<h3 class="ms-layer ms-promo-info-in color-darker"  style="left:450px; top:290px"
+			data-effect="left(40)"
+			data-duration="2300"
+			data-delay="1400"
+			data-ease="easeOutBack"
+			>NEW <span class="color-light">FEATURES</span></h3>
+
+			<a class="ms-layer btn-u" style="left:450px; top:370px" href="#"
+			data-effect="bottom(40)"
+			data-duration="2000"
+			data-delay="1300"
+			data-ease="easeOutExpo"
+			>LEARN MORE</a>
+
+			<a class="ms-layer btn-u btn-u-dark" style="left:580px; top:370px" href="#"
+			data-effect="bottom(40)"
+			data-duration="2000"
+			data-delay="1300"
+			data-ease="easeOutExpo"
+			>DOWNLOAD NOW</a>
+		</div>
+
+		<div class="ms-slide" style="z-index: 12">
+			<%= image_tag("masterslider/blank.gif", :data => { :src => image_url("pictures/Kollage3.png")})%>
+
+			<div class="ms-layer video-box" style="bottom:125px; right:15px; width:650px; height:370px;"
+			data-type="video"
+			data-effect="rotate3dright(0,30,0,100,r)"
+			data-duration="1500"
+			data-ease="easeOutQuad"
+			>
+
+				<%= image_tag("masterslider/blank.gif", :class => "ms-img-bordered", :data => { :src => image_url("pictures/7.jpg")})%>
+				<iframe src="http://player.vimeo.com/video/122353641" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+
+			<h3 class="ms-layer ms-promo-info color-light"  style="left:10px; top:170px"
+			data-effect="bottom(20)"
+			data-duration="2300"
+			data-delay="2300"
+			data-ease="easeOutExpo"
+			>AMAZING</h3>
+
+			<h3 class="ms-layer ms-promo-info-in color-light"  style="left:10px; top:245px"
+			data-effect="left(100)"
+			data-duration="3300"
+			data-delay="1900"
+			data-ease="easeOutExpo"
+			><span class="color-green">FEATURES</span></h3>
+
+			<h3 class="ms-layer normal-title color-light"  style="left:10px; top:312px"
+			data-effect="bottom(20)"
+			data-duration="2300"
+			data-delay="2000"
+			data-ease="easeOutExpo"
+			>UNIFY BOOTSTRAP TEMPLATE</h3>
+
+			<p class="ms-layer ms-promo-sub ms-promo-sub-in color-light"  style="left:10px; top:360px"
+			data-effect="right(40)"
+			data-duration="2300"
+			data-delay="2300"
+			data-ease="easeOutExpo"
+			>
+				YOUTUBE, VIMEO AND CUSTOM
+				<br>
+				IFRAME SUPPORTED
+			</p>
+		</div>
+	</div>
+	<!-- end of masterslider -->
+</div>
+<!--=== End Slider ===-->
+<div class="content-md">
+	<div class="container">
+		<!-- Service Box -->
+		<div class="row text-center margin-bottom-60">
+			<div class="col-md-4 md-margin-bottom-50">
+				<%= image_tag("user.jpg", :class => "image-md rounded-x margin-bottom-20")%>
+				<h1 class="title-v3-md margin-bottom-10">Auftritte</h1>
+				<p>
+					Wir alle lieben es zu singen. Noch mehr Spaß macht es allerdings vor Publikum zu singen. Und das machen wir regelmäßig im Rahmen von Gottesdiensten und Konzerten.
+				</p>
+			</div>
+			<div class="col-md-4 flat-service md-margin-bottom-50">
+				<%= image_tag("user.jpg", :class => "image-md rounded-x margin-bottom-20")%>
+				<h2 class="title-v3-md margin-bottom-10">Gemeinschaft</h2>
+				<p>
+					Im Zentrum unseres Chors steht die Gemeinschaft des Chors untereinander und zu unserem Umfeld. Deswegen beteiligen wir uns auch bei vielen Veranstaltungen.
+				</p>
+			</div>
+			<div class="col-md-4 flat-service">
+				<%= image_tag("user.jpg", :class => "image-md rounded-x margin-bottom-20")%>
+				<h2 class="title-v3-md margin-bottom-10">Offenheit</h2>
+				<p>
+					Bei uns ist jeder, wirklich jeder willkommen. Wir freuen uns über jeden, der mit uns zusammen singt.
+				</p>
 			</div>
 		</div>
-		<!--=== End Call To Action ===-->
-		
-		<div class="container content-sm">
-				<div class="headline-center margin-bottom-60">
-					<h2>NEUIGKEITEN</h2>
-					<p>Dass wir nicht nur das Singen gemeinsam haben zeigen die zahlreichen Aktitäten, die wir zusammen unternehmen und unser Engargement in unserem Umfeld. Wir sind einfach ständig in Bewegung. Noch mehr von uns findest du bei den <%= link_to "Neuigkeiten - LINK FEHLT" %></p>
-				</div><!--/end Headline Center-->
+		<!-- End Service Box -->
+	</div><!--/container -->
+</div>
+<!--=== Call To Action ===-->
+<div class="call-action-v1 bg-color-light">
+	<div class="container">
+		<div class="call-action-v1-box">
+			<div class="call-action-v1-in">
+				<h3><strong>Jetzt einsteigen und Probesingen vereinbaren</strong></h3>
+				<p>
+					Du wolltest schon immer mal singen, weißt aber noch nicht wie und wo? Du bist auf der Sucher nach einem neuen Hobby?
+					Wir sind stetig auf der Suche nach netten Sängern, die uns als Mitglied oder auch zeitweise im Rahmen eines Projektchors begleiten.
+				</p>
+			</div>
+			<div class="call-action-v1-in inner-btn page-scroll">
+				<a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-dark btn-u-block">PROBESINGEN VEREINBAREN</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--=== End Call To Action ===-->
 
-				<!-- Portfolio Box -->
-				<ul class="list-unstyled row portfolio-box">
-					<li class="col-sm-4 md-margin-bottom-50">
-						<a class="thumbnail fancybox" data-rel="gallery" title="Unsere Aktivität" href="<%= image_url("pictures/7.jpg")%>" >
-							<%= image_tag("pictures/7.jpg", :class => "full-width img-responsive")%>
-							<span class="portfolio-box-in rounded-x">
-								<i class="icon-magnifier-add"></i>
-							</span>
-						</a>
-						<div class="headline-left margin-bottom-10"><h3 class="headline-brd">Unsere Aktivität</h3></div>
-						<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Aktivitäten</a>, <a href="#">Neuigkeiten</a></small>
-						<p>Wir haben was ganz tolles unternommen und davon berichten wir hier. </p>
-					</li>
-					<li class="col-sm-4 md-margin-bottom-50">
-						<a class="thumbnail fancybox" data-rel="gallery" title="Neue Verstärkung" href="<%= image_url("pictures/2.jpg")%>" >
-							<%= image_tag("pictures/2.jpg", :class => "full-width img-responsive")%>
-							<span class="portfolio-box-in rounded-x">
-								<i class="icon-magnifier-add"></i>
-							</span>
-						</a>
-						<div class="headline-left margin-bottom-10"><h3 class="headline-brd">Neue Verstärkung</h3></div>
-						<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Neuigkeiten</a>,</small>
-						<p> Wir freuen uns Max Mustermann als neuen Sänger in unserem Chor zu begrüßen. Er wird ab sofort den Tenor unterstützen.</p>
-					</li>
-					<li class="col-sm-4">
-						<a class="thumbnail fancybox" data-rel="gallery" title="Neue Chorfarbe gewählt" href="<%= image_url("pictures/3.jpg")%>" >
-							<%= image_tag("pictures/3.jpg", :class => "full-width img-responsive")%>
-							<span class="portfolio-box-in rounded-x">
-								<i class="icon-magnifier-add"></i>
-							</span>
-						</a>
-						<div class="headline-left margin-bottom-10"><h3 class="headline-brd">Neue Chorfarbe gewählt</h3></div>
-						<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Neuigkeiten</a>, <a href="#">Presse</a></small>
-						<p>Bei der letzten Mitgliederversammlung am Montag wurde nach vielen Diskussionen eine neue Chorfarbe gewählt. In Zukunft werden wir in einem schlichten pink auftreten, dass durch rote Akzente untermalt wird.</p>
-					</li>
-				</ul>
-				<!-- End Portfolio Box -->
-			</div><!--/end container-->
-		
-		
+<div class="container content-sm">
+	<div class="headline-center margin-bottom-60">
+		<h2>NEUIGKEITEN</h2>
+		<p>
+			Dass wir nicht nur das Singen gemeinsam haben zeigen die zahlreichen Aktitäten, die wir zusammen unternehmen und unser Engargement in unserem Umfeld. Wir sind einfach ständig in Bewegung. Noch mehr von uns findest du bei den <%= link_to "Neuigkeiten - LINK FEHLT" %>
+		</p>
+	</div><!--/end Headline Center-->
+
+	<!-- Portfolio Box -->
+	<ul class="list-unstyled row portfolio-box">
+		<li class="col-sm-4 md-margin-bottom-50">
+			<a class="thumbnail fancybox" data-rel="gallery" title="Unsere Aktivität" href="<%= image_url("pictures/7.jpg")%>" > <%= image_tag("pictures/7.jpg", :class => "full-width img-responsive")%> <span class="portfolio-box-in rounded-x"> <i class="icon-magnifier-add"></i> </span> </a>
+			<div class="headline-left margin-bottom-10">
+				<h3 class="headline-brd">Unsere Aktivität</h3>
+			</div>
+			<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Aktivitäten</a>, <a href="#">Neuigkeiten</a></small>
+			<p>
+				Wir haben was ganz tolles unternommen und davon berichten wir hier.
+			</p>
+		</li>
+		<li class="col-sm-4 md-margin-bottom-50">
+			<a class="thumbnail fancybox" data-rel="gallery" title="Neue Verstärkung" href="<%= image_url("pictures/2.jpg")%>" > <%= image_tag("pictures/2.jpg", :class => "full-width img-responsive")%> <span class="portfolio-box-in rounded-x"> <i class="icon-magnifier-add"></i> </span> </a>
+			<div class="headline-left margin-bottom-10">
+				<h3 class="headline-brd">Neue Verstärkung</h3>
+			</div>
+			<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Neuigkeiten</a></small>
+			<p>
+				Wir freuen uns Max Mustermann als neuen Sänger in unserem Chor zu begrüßen. Er wird ab sofort den Tenor unterstützen.
+			</p>
+		</li>
+		<li class="col-sm-4">
+			<a class="thumbnail fancybox" data-rel="gallery" title="Neue Chorfarbe gewählt" href="<%= image_url("pictures/3.jpg")%>" > <%= image_tag("pictures/3.jpg", :class => "full-width img-responsive")%> <span class="portfolio-box-in rounded-x"> <i class="icon-magnifier-add"></i> </span> </a>
+			<div class="headline-left margin-bottom-10">
+				<h3 class="headline-brd">Neue Chorfarbe gewählt</h3>
+			</div>
+			<small class="project-tag"><i class="fa fa-tag"></i><a href="#">Neuigkeiten</a>, <a href="#">Presse</a></small>
+			<p>
+				Bei der letzten Mitgliederversammlung am Montag wurde nach vielen Diskussionen eine neue Chorfarbe gewählt. In Zukunft werden wir in einem schlichten pink auftreten, dass durch rote Akzente untermalt wird.
+			</p>
+		</li>
+	</ul>
+	<!-- End Portfolio Box -->
+</div><!--/end container-->
 
 <!-- Testimonials v4 -->
-		<div class="bg-color-light">
-			<div class="container content-md">
-				<div class="headline-center margin-bottom-60">
-					<h2><%= (t "start.testimonials.heading")%></h2>
-					<p>Wir sind Chor, in dem <strong>Gemeinschaft</strong> großgeschrieben wird. Trotzdem bestehen wir aus vielen <strong>Individualisten</strong>.<br>
-						Jeden treibt etwas anderes an und jeder hat seine eigenen Gründe, warum er in unserem Chor ist. Das sind nur zwei von vielen individuellen Gründen: </p>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="testimonials-v4 md-margin-bottom-50">
-							<div class="testimonials-v4-in">
-								<p>The best programs are written so that computing machines can perform them quickly and so that human beings can understand them clearly. A programmer is ideally an essayist who works with traditional aesthetic and literary forms as well as mathematical concepts.</p>
-							</div>
-							<%= image_tag("user.jpg", class: "rounded-x")%>
-							<span class="testimonials-author">
-								Jeremy Asigner<br>
-								<em>Web Developer, <a href="#">Google Inc.</a></em>
-							</span>
-						</div>
-					</div>
-
-					<div class="col-sm-6">
-						<div class="testimonials-v4">
-							<div class="testimonials-v4-in">
-								<p>We see a lot of feature-driven product design in which the cost of features is not properly accounted. Features can have a negative value to customers because they make the products more difficult to understand and use. We are finding that people like products that just work.</p>
-							</div>
-							<%= image_tag("user.jpg", class: "rounded-x")%>
-							<span class="testimonials-author">
-								Markus Erlinghagen<br>
-								<em>Sänger im Bass</em>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div><!--/end container-->
+<div class="bg-color-light">
+	<div class="container content-md">
+		<div class="headline-center margin-bottom-60">
+			<h2><%= (t "start.testimonials.heading")%></h2>
+			<p>
+				Wir sind Chor, in dem <strong>Gemeinschaft</strong> großgeschrieben wird. Trotzdem bestehen wir aus vielen <strong>Individualisten</strong>.
+				<br>
+				Jeden treibt etwas anderes an und jeder hat seine eigenen Gründe, warum er in unserem Chor ist. Das sind nur zwei von vielen individuellen Gründen:
+			</p>
 		</div>
-		<!-- End Testimonials v4 -->
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="testimonials-v4 md-margin-bottom-50">
+					<div class="testimonials-v4-in">
+						<p>
+							Das Singen nach einem anstrengendem Arbeitstag bringt mich wieder in ruhiges Fahrwasser und meistens gehe ich hinterher mit einem schönen Ohrwurm nach Hause. In der Gemeinschaft des annenchors macht das Singen besonders viel Spaß.
+						</p>
+					</div>
+					<%= image_tag("user.jpg", class: "rounded-x")%>
+					<span class="testimonials-author"> Christiane Lohmann
+						<br>
+						<em>Sängerin im Alt</em> </span>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="testimonials-v4">
+					<div class="testimonials-v4-in">
+						<p>
+							Der Chor ist so herrlich vielfältig: Nicht nur Frauen und Männer, junge, mittlere und alte Sänger/innen, sondern auch auch ein bunter Programm, in dem es fast alles gibt zwischen Bach und Gospel.
+							<br />
+							<br />
+						</p>
+					</div>
+					<%= image_tag("user.jpg", class: "rounded-x")%>
+					<span class="testimonials-author"> Monkia Pötter 
+						<br>
+						<em>Sänger im [Stimme]</em> </span>
+				</div>
+			</div>
+		</div>
+	</div><!--/end container-->
+</div>
+<!-- End Testimonials v4 -->

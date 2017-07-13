@@ -22,7 +22,7 @@
 
 	</head>
 
-	<body class="header-fixed header-fixed-space">
+	<body class="header-fixed header-fixed-space <%= controller_name + "_" + action_name %>">
 		<div class="wrapper">
 			<%= render :partial => 'layouts/navbar' %>
 			<!--=== Content Part  ===-->

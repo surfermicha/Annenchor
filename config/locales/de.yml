@@ -56,4 +56,9 @@ de:
     headings: 
       main: "Kontakt"
       contactdata: "Kontaktdaten"
-    text: "Ganz wichtiger Einleitungstext"
+      businesshours: "Sprechzeiten"
+      practice: "Probenzeiten"
+    text: "Wir freuen und jederzeit über Anfragen, Anregungen, Lob und Kritik. Auch bei Fragen stehen wir gerne zur Verfügung. Um uns zu kontaktieren, kann das Formular, oder eine der nebenstehenden Möglichkeiten genutzt werden."
+    practice:
+      thursday: "Donnerstag"
+      thursdayhours: "20:00 Uhr bis 22:00 Uhr"
