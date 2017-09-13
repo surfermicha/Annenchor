@@ -23,6 +23,6 @@ test:
 production:
   adapter: postgres
   host: localhost
-  username: pguser
+  username: rails
   password: <%= ENV["DB_PASSWORD"] %>
   database: db/production.pg
