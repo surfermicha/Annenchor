@@ -1,5 +1,6 @@
 # Change these
 server '165.227.134.20', port: 22, roles: [:web, :app, :db], primary: true
+set :ssh_options, { keys: ["#{ENV['USERPROFILE']}/.ssh/id_rsa.pub"] }
 
 set :repo_url,        'git@github.com:surfermicha/Annenchor.git'
 set :application,     'Annenchor'
